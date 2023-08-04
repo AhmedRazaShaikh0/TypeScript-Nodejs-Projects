@@ -1,0 +1,18 @@
+1- tsc --init
+
+2- npm init -y
+
+3- npm i inquirer
+
+4- npm i --save-dev @types/inquirer
+
+5- Update the following in tsconfig.json
+"target": "ES2022",
+"module": "NodeNext",
+"moduleResolution": "NodeNext",
+
+6- Add "type": "module" in package.json
+
+7- run tsc
+
+8- run node index
