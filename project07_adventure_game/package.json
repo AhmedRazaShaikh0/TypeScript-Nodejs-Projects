@@ -1,0 +1,19 @@
+{
+  "name": "project07_adventure_game",
+  "version": "1.0.0",
+  "description": "This project is not GUI based. It is a console-based game. The video [here](https://www.youtube.com/watch?v=EpB9u4ItOYU&t=1s) shows how to develop the game in Java. You will take the requirements of the game from the video and develop the game in TypeScript and Node.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}
