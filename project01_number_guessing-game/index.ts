@@ -30,5 +30,5 @@ if (ComputerNumber === questions.UserNumber) {
     "User's Number:",
     questions.UserNumber
   );
-  console.log("Oops! You Lose");
+  console.log("Oops! You Lost");
 }
