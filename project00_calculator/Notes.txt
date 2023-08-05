@@ -16,3 +16,6 @@
 7- run tsc
 
 8- run node index
+
+tsc --init && npm init -y && npm i inquirer && npm i --save-dev @types/inquirer
+tsc && node index
