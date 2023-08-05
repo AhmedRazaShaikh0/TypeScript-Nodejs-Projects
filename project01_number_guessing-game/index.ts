@@ -1,8 +1,12 @@
 import inquirer from "inquirer";
 
+interface UserInputType {
+  UserNumber: number;
+}
+
 const ComputerNumber = Math.floor(Math.random() * 10);
 
-const questions = await inquirer.prompt([
+const questions: UserInputType = await inquirer.prompt([
   {
     type: "number",
     name: "UserNumber",

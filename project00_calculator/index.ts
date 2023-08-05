@@ -1,12 +1,12 @@
 import inquirer from "inquirer";
 
-interface CalculatorInput {
+interface UserInputType {
   num1: number;
   num2: number;
   operator: string;
 }
 
-const questions: CalculatorInput = await inquirer.prompt([
+const questions: UserInputType = await inquirer.prompt([
   {
     type: "number",
     name: "num1",
