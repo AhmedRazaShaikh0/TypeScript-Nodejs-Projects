@@ -1,5 +1,5 @@
-import { Student } from "./student.js";
 import inquirer from "inquirer";
+import { Student } from "./classes.js";
 const { number } = await inquirer.prompt([
     {
         type: "number",
