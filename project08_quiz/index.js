@@ -3,16 +3,16 @@ const questions = [
     {
         text: "What is the capital of France?",
         options: ["Paris", "Berlin", "Madrid", "Rome"],
-        correctOptionIndex: 0,
+        correctOption: "Paris",
     },
     {
         text: "Which planet is known as the Red Planet?",
         options: ["Mars", "Venus", "Jupiter", "Saturn"],
-        correctOptionIndex: 0,
+        correctOption: "Mars",
     },
 ];
 async function QuizApp() {
-    console.log("Welcome to Quiz!\n");
+    console.log("Welcome to Quiz App!\n");
     const userAnswers = [];
     for (const question of questions) {
         const answer = await inquirer.prompt([
@@ -23,12 +23,12 @@ async function QuizApp() {
                 choices: question.options,
             },
         ]);
-        userAnswers.push(question.options.indexOf(answer.selectedOption));
+        userAnswers.push(answer.selectedOption);
     }
     console.log("\nQuiz completed!\n");
     let score = 0;
     userAnswers.forEach((userAnswer, index) => {
-        if (userAnswer === questions[index].correctOptionIndex) {
+        if (userAnswer === questions[index].correctOption) {
             score++;
         }
     });

@@ -5,10 +5,10 @@ async function startCountdown() {
             type: 'input',
             name: 'countdownLimit',
             message: 'Enter the countdown limit in seconds:',
-            //   validate: (input: any) => {
-            //     const seconds = parseInt(input);
-            //     return !isNaN(seconds) && seconds >= 0;
-            //   },
+            validate: (input) => {
+                const seconds = parseInt(input);
+                return !isNaN(seconds) && seconds >= 0;
+            },
         },
     ];
     const answers = await inquirer.prompt(questions);

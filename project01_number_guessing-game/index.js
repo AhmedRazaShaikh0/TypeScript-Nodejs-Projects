@@ -13,5 +13,5 @@ if (ComputerNumber === questions.UserNumber) {
 }
 else {
     console.log("Computer's Number:", ComputerNumber, "|", "User's Number:", questions.UserNumber);
-    console.log("Oops! You Lose");
+    console.log("Oops! You Lost");
 }

@@ -10,13 +10,13 @@ while (loop) {
         },
         {
             type: 'confirm',
-            name: 'addmore',
+            name: 'addMore',
             message: 'Do you want to add more todo?',
             default: false
         }
     ]);
-    const { TODO, addmore } = answers;
-    loop = addmore;
+    const { TODO, addMore } = answers;
+    loop = addMore;
     if (TODO) {
         todos.push(TODO);
     }

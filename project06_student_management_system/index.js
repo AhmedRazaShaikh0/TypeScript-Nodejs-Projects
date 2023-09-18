@@ -16,7 +16,7 @@ class Student extends Person {
         super(name, age);
         this.rollNumber = rollNumber;
     }
-    registerForCourses(course) {
+    courseRegistration(course) {
         this.courses.push(course);
     }
 }
@@ -42,7 +42,7 @@ class Course {
     }
     addStudent(student) {
         this.students.push(student);
-        student.registerForCourses(this);
+        student.courseRegistration(this);
     }
     setInstructor(instructor) {
         this.instructor = instructor;
